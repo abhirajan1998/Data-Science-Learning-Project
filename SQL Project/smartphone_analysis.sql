@@ -19,5 +19,18 @@ Q6. What are the different types of processor?
 SELECT DISTINCT(processor_brand) AS 'Types_of_processor'
 FROM dslp.smartphones
 
+Q7. Write query to display all phones and their respective processor.
+SELECT DISTINCT brand_name, processor_brand 
+FROM dslp.smartphones 
 
+Q8. Display only samsung phone.
+SELECT * FROM dslp.smartphones
+WHERE brand_name = 'samsung'
 
+Q9. Write query to return only phone price greater than 50k.
+SELECT * FROM dslp.smartphones
+WHERE price > 50000
+
+Q10.Find all phones whose price is between 10k and 20k?
+SELECT * FROM dslp.smartphones
+WHERE price BETWEEN 10000 AND 20000
